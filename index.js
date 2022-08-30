@@ -105,3 +105,5 @@ const solution11 = (year) => {
 };
 
 console.log(solution11(2012)); // true
+
+// Закончил на 07.27 09:35 идти вниз
