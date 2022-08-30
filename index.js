@@ -9,7 +9,7 @@ const mapper = {
 
 const solution1 = (person) => `Luke, I am your ${mapper[person]}.`;
 
-console.log(solution1('Leia'));
+console.log(solution1('Leia')); // "Luke, I am your sister."
 
 // Task: squares_and_cubes
 
@@ -24,7 +24,7 @@ const solution2 = (first, second) => {
   return false;
 };
 
-console.log(solution2(4, 8));
+console.log(solution2(4, 8)); // true
 
 // Task: smallest_second_number
 
@@ -33,13 +33,13 @@ const solution3 = (numbers) => {
   return sort[1];
 };
 
-console.log(solution3([1, 2, 3]));
+console.log(solution3([1, 2, 3])); // 2
 
 // Task: minmax_find
 
 const solution4 = (numbers) => [Math.min(...numbers), Math.max(...numbers)];
 
-console.log(solution4([-3, 2, 10, 22]));
+console.log(solution4([-3, 2, 10, 22])); // -3 22
 
 // Task: reverse_each_word
 
@@ -52,13 +52,13 @@ const solution5 = (s) => {
   return str.split(' ').reverse().join(' ');
 };
 
-console.log(solution5('Hello there, and how are you?'));
+console.log(solution5('Hello there, and how are you?')); // "olleH ,ereht dna woh era ?uoy"
 
 // Task: celsius_to_kelvin
 
 const solution6 = (temperature) => temperature + 273;
 
-console.log(solution6(35));
+console.log(solution6(35)); // 308
 
 // Task: cube_sum
 
@@ -71,7 +71,7 @@ const solution7 = (num) => {
   return res;
 };
 
-console.log(solution7(20));
+console.log(solution7(20)); // 44100
 
 // Task: fizzbuzz
 
@@ -82,4 +82,26 @@ const solution8 = (n) => {
   return '';
 };
 
-console.log(solution8(150));
+console.log(solution8(150)); // FizzBuzz
+
+// Task: stickers_count
+
+const solution9 = (num) => num * num * 6;
+
+console.log(solution9(1)); // 6
+
+// Task: max_abs_elem
+
+const solution10 = (arr) => Math.max(...arr.map((item) => Math.abs(item)));
+
+console.log(solution10([1, -2, 3, 4])); // 4
+
+// Task: leap__year
+
+const solution11 = (year) => {
+  if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+    return true;
+  }
+};
+
+console.log(solution11(2012)); // true
